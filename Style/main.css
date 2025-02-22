@@ -1,0 +1,296 @@
+.container > main{
+    width: 100%;
+}
+.container > main > .cv {
+    width: 100%;
+    height: 100%;
+}
+.container > main > .cv > .pic {
+    width: 100%;
+    height: 40%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    padding: 10px 0px;
+}
+.container > main > .cv > .pic > .img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: relative;
+}
+.container > main > .cv > .pic > .img::before{
+    content: "";
+    position: absolute;
+    left: -10px;
+    bottom: -10px;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: black;
+    z-index: -1;
+}
+.container > main > .cv > .pic > .img > img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    cursor: pointer;
+}
+.container > main > .cv > .text {
+    width: 100%;
+    height: 60%;
+    text-align: center;
+    font-size: 18px;
+    padding: 20px 10px;
+}
+.container > main > .cv > .text > button {
+    padding: 10px 20px;
+    margin-top: 10px;
+    color: black;
+    background-color: transparent;
+    border: 1px solid goldenrod;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    font-weight: bold;
+}
+.container > main > .cv > .text > button::before{
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-radius: 5px;
+    background-color: goldenrod;
+    z-index: -1;
+    transition: 0.3s ease-in-out;
+}
+.container > main > .cv > .text > button:hover::before{
+    width: 100%;
+}
+.container > main > .cv > .text > button:hover{
+    color: white;
+    font-weight: bold;
+}
+.container > main > .a1 {
+    width: 100%;
+    background-color: rgba(173, 216, 230, 0.639);
+    margin-top: 10px;
+}
+.container > main > .a1 > .title{
+    text-align: center;
+}
+.container > main > .a1  > .box{
+    width: 100%;
+    display: grid;
+    padding: 10px 20px;
+}
+.container > main > .a1 > .box > .box1{
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    font-size: clamp(18px,3vw,22px);
+}
+.container > main > .a1 > .box > .box1>span{
+    font-size: 15px;
+    padding: 20px 0px;
+}
+.container > main > .a1 > .box > .box2>span{
+    font-size: 15px;
+    padding: 20px 0px;
+}
+.container > main > .a1 > .box > .box1>p{
+    color: gray;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+           line-clamp: 4; 
+   -webkit-box-orient: vertical;
+}
+.container > main > .a1 > .box > .box2>p{
+    color: gray;
+    overflow: hidden;
+   display: -webkit-box;
+   -webkit-line-clamp: 4; /* number of lines to show */
+           line-clamp: 4; 
+   -webkit-box-orient: vertical;
+}
+.container > main > .a1 >.box >  .box2{
+    width: 100%;
+    padding: 15px;
+    background-color: white;
+    border-radius: 5px;
+    font-size: clamp(18px,3vw,22px);
+}
+.container > main > .features {
+    width: 100%;
+    background-color: rgba(245, 245, 245, 0.87);
+    padding: 20px 10px;
+}
+
+.container > main > .features >.row{
+    width: 100%;
+    height: 100%;
+    background-color: aliceblue; 
+}
+.container > main > .features >.row > .card{
+    width: 100%;
+}
+.container > main > .features >.row > .card > .imagee{
+    width: 100%;
+    height: 280px;
+    background-color: black;
+}
+.container > main > .features >.row > .card > .imagee > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    cursor: pointer;
+    backdrop-filter: ;
+}
+.container > main > .features >.row > .card > .cbody > .title{
+    font-size: clamp(18px,3vw,22px);
+    font-weight: 700;
+}
+@media (min-width: 992px) {
+    .container > main > .cv {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+        padding: var(--padding-lg);
+    }
+    .container > main > .cv > .pic {
+        width: 30%;
+        height: 500px;
+       
+    }
+    .container > main > .cv > .pic > .img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: relative;
+    }
+    .container > main > .cv > .text {
+        width: 70%;
+        text-align: justify;
+        font-size: 18px;
+        padding-top: 150px;
+    }
+    .container > main > .a1 {
+        width: 100%;
+        background-color: rgba(173, 216, 230, 0.639);
+    }
+    .container > main > .a1 > .title{
+        text-align: start;
+        padding: 20px 0px;
+    }
+    .container > main > .a1  > .box{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+       
+    }
+    .container > main > .a1 > .box > .box1{
+        width: 40%;
+        /* height: 300px; */
+        background-color: white;
+        border-radius: 5px;
+    }
+
+    .container > main > .a1 >.box >  .box2{
+        width: 40%;
+        /* height: 300px; */
+        background-color: white;
+        border-radius: 5px;
+    }
+}
+@media (min-width: 768px) {
+    .container > main{
+        padding: var(--padding-md);
+    }
+    .container > main > .cv {
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .container > main > .cv > .pic {
+        width: 30%;
+        height: 500px;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+    .container > main > .cv > .pic > .img{
+        width: 200px;
+        height: 200px;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+    .container > main > .cv > .text {
+        width: 70%;
+        text-align: justify;
+        font-size: 18px;
+        padding: 150px 50px;
+    }
+    .container > main > .a1 {
+        width: 100%;
+        background-color: rgba(173, 216, 230, 0.639);
+    }
+    .container > main > .a1 > .title{
+        width: 100%;
+        /* height: 50px; */
+        /* justify-content: space-between;
+        display: flex;
+        align-items: center; */
+        padding-left: 15px;
+    }
+    .container > main > .a1  > .box{
+        width: 100%;
+        /* height: 350px; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .container > main > .a1 > .box > .box1{
+        width: 50%;
+        /* height: 300px; */
+        background-color: white;
+        margin-right: 10px;
+        border-radius: 5px;
+    }
+    .container > main > .a1 > .box > .box2>p{
+        color: gray;
+        overflow: hidden;
+       display: -webkit-box;
+       -webkit-line-clamp: 6; /* number of lines to show */
+               line-clamp: 6; 
+       -webkit-box-orient: vertical;
+    }
+    .container > main > .a1 > .box > .box1>p{
+        color: gray;
+        overflow: hidden;
+       display: -webkit-box;
+       -webkit-line-clamp: 6; /* number of lines to show */
+               line-clamp: 6; 
+       -webkit-box-orient: vertical;
+    }
+    .container > main > .a1 >.box >  .box2{
+        width: 50%;
+        /* height: 300px; */
+        background-color: white;
+        margin-left: 10px;
+        border-radius: 5px;
+    }
+}

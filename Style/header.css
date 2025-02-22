@@ -1,0 +1,55 @@
+.container > header{
+    width: 100%;
+}
+.container > header > nav{
+    width: 100%;
+    background-color: whitesmoke;
+    flex-wrap: wrap;
+}
+.container > header > nav > .menu{
+    display: flex;
+    justify-content:center;
+    list-style: none;
+}
+.container > header > nav > .menu > li{
+    padding: 30px 30px;
+
+}
+.container > header > nav > .menu > li > a{
+   text-decoration: none;
+   font-size: clamp(15px,2vw,20px);
+   font-weight: bold;
+   position: relative;
+   color: black;
+
+}
+
+.container > header > nav > .menu > li > a::after{
+    content: "";
+    position: absolute;
+    width: 0px;
+    height: 2px;
+    display: block;
+    background-color: goldenrod;
+    transition:  0.3s ease;
+}
+
+.container > header > nav > .menu > li > a:hover::after{
+    width: 100%;
+}
+
+@media  (min-width: 992px) {
+    .container > header {
+        padding: 0px 100px;
+    }
+    .container > header > nav > .menu{
+        display: flex;
+        justify-content: right;
+        list-style: none;
+    }
+}
+@media  (min-width: 768px) {
+    .container > header  {
+       padding: 0px 0px;
+    }
+}
